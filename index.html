@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="calculator">
+      <input type="text" class="display" id="display" disabled />
+      <div class="buttons">
+        <button onclick="clearDisplay()" class="grey">C</button>
+        <button onclick="appendValue('(')" class="grey">(</button>
+        <button onclick="appendValue(')')" class="grey">)</button>
+        <button onclick="appendValue('%')" class="grey">%</button>
+        <button onclick="appendValue('7')" class="red">7</button>
+        <button onclick="appendValue('8')" class="red">8</button>
+        <button onclick="appendValue('9')" class="red">9</button>
+        <button onclick="appendValue('/')" class="blue">÷</button>
+        <button onclick="appendValue('4')" class="red">4</button>
+        <button onclick="appendValue('5')" class="red">5</button>
+        <button onclick="appendValue('6')" class="red">6</button>
+        <button onclick="appendValue('*')" class="blue">x</button>
+        <button onclick="appendValue('1')" class="red">1</button>
+        <button onclick="appendValue('2')" class="red">2</button>
+        <button onclick="appendValue('3')" class="red">3</button>
+        <button onclick="appendValue('-')" class="blue">-</button>
+        <button onclick="appendValue('.')" class="red">.</button>
+        <button onclick="calculateSqrt()" class="red">√</button>
+        <button onclick="calculateSquareRoot()" class="red">x²</button>
+        <button onclick="appendValue('+')" class="blue">+</button>
+        <button
+          onclick="appendValue('0')"
+          class="red"
+          style="grid-column: span 2"
+        >
+          0
+        </button>
+        <button onclick="calculate()" class="blue" style="grid-column: span 2">
+          =
+        </button>
+        <button onclick="calculateSin()" class="grey">sin</button>
+        <button onclick="calculateCos()" class="grey">cos</button>
+        <button onclick="calculateTan()" class="grey">tan</button>
+        <button onclick="calculateCot()" class="grey">cot</button>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
